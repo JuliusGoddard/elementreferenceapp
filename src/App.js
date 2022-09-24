@@ -4,6 +4,8 @@ import Elements from './components/Elements'
 import NameSearch from './components/NameSearch'
 import NumberSearch from './components/NumberSearch'
 import ElementsByNumber from './components/ElementsByNumber'
+import Header from './components/Header'
+import Footer from './components/Footer'
 import './index.css'
 
 const App = () =>  {
@@ -33,6 +35,7 @@ const handleClick = (e) => {
   return (
     <div className="App">
       <div className="container min-w-full">
+        <Header />
         <div className="flex h-screen bg-background bg-no-repeat bg-cover bg-center-left">
         <div className="m-auto">
        <h1 className="text-8xl text-white">Element Reference App</h1>
@@ -49,6 +52,7 @@ const handleClick = (e) => {
 </div>
 <Elements elements={elements} searchedElements={searchedElements} handleClick={handleClick} />
 <ElementsByNumber searchedNumberElements={searchedNumberElements} handleClick={handleClick} />
+<Footer />
 </div>
     </div>
   );

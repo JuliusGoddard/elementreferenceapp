@@ -5,7 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-     backgroundImage: { 'background': "url('/src/images/background.webp')", 'pic01': "url('/src/images/pic01.jpg')" }
+     backgroundImage: { 'background': "url('/src/images/background.webp')", 
+     'pic01': "url('/src/images/pic01.jpg')",
+    'logo': "url('/src/images/logo.webp')" }
     },
   },
   plugins: [],
